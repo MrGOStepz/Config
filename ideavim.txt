@@ -1,0 +1,28 @@
+"" Source your .vimrc
+"source ~/.vimrc
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+set number relativenumber
+set idearefactormode=keep
+set ideajoin
+set surround
+set easymotion
+" Do incremental searching.
+set incsearch
+set mouse=a
+set clipboard+=unnamed
+set clipboard+=ideaput
+" Don't use Ex mode, use Q for formatting.
+
+" In insert or command mode, move normally by using Ctrl
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
+
+map Q gq
+nnoremp \r :action IdeaVim.ReloadVimRc.reload<CR>
+
