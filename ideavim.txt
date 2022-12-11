@@ -28,4 +28,5 @@ let g:NERDTreeMapActivateNode='l'
 let g:NERDTreeMapJumpParent='h'
 
 map Q gq
+imap <C+[> <ESC>
 nnoremp \r :action IdeaVim.ReloadVimRc.reload<CR>
