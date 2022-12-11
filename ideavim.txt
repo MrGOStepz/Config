@@ -23,6 +23,9 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 
+set NERDTree
+let g:NERDTreeMapActivateNode='l'
+let g:NERDTreeMapJumpParent='h'
+
 map Q gq
 nnoremp \r :action IdeaVim.ReloadVimRc.reload<CR>
-
