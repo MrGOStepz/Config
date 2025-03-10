@@ -13,7 +13,7 @@ set easymotion
 " Do incremental searching.
 set incsearch
 set mouse=a
-set clipboard+=unnamed
+set clipboard-=unnamed
 set clipboard+=ideaput
 " Don't use Ex mode, use Q for formatting.
 
@@ -22,6 +22,12 @@ inoremap <C-h> <Left>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
+
+nnoremap <C-A-j> :action Back<CR>
+nnoremap <C-b> :action GotoDeclaration<CR>
+nnoremap <C-A-b> :action GotoImplementation<CR>
+nnoremap <C-w> :action EditorSelectWord<CR>
+nnoremap <C-e> :action EditorEscape<CR>
 
 set NERDTree
 let g:NERDTreeMapActivateNode='l'
