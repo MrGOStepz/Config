@@ -14,6 +14,7 @@ set easymotion
 set incsearch
 set mouse=a
 set clipboard-=unnamed
+set clipboard-=autoselect
 set clipboard+=ideaput
 " Don't use Ex mode, use Q for formatting.
 
@@ -28,6 +29,16 @@ nnoremap <C-b> :action GotoDeclaration<CR>
 nnoremap <C-A-b> :action GotoImplementation<CR>
 nnoremap <C-w> :action EditorSelectWord<CR>
 nnoremap <C-e> :action EditorEscape<CR>
+
+" Debugging mappings
+nnoremap <leader>d :action Debug<CR>
+nnoremap <leader>b :action ToggleLineBreakpoint<CR>
+nnoremap <F5> :action Resume<CR>
+nnoremap <F6> :action StepOver<CR>
+nnoremap <F7> :action StepInto<CR>
+nnoremap <F8> :action StepOut<CR>
+nnoremap <leader>e :action EvaluateExpression<CR>
+
 
 set NERDTree
 let g:NERDTreeMapActivateNode='l'
